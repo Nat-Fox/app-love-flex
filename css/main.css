@@ -100,3 +100,14 @@ body {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+
+/* Estilos para el footer */
+
+.footer-fin {
+    background-color: #373B47;
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+    justify-content: center;
+}
