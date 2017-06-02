@@ -1,7 +1,48 @@
 body {
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.71429;
-  background-color: #fff;
-  /* Enlaza la tipografia Open Sans */
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.71429;
+    background-color: #fff;
+    /* Enlaza la tipografia Open Sans */
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Contenedor Flexbox */
+
+.flex-container {
+    display: flex;
+}
+
+
+/* Menu */
+
+.menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu.flex-container {
+    justify-content: flex-start;
+}
+
+.logo-container {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.flex-container .logo {
+    width: 70px;
+    height: 70px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
 }
