@@ -23,6 +23,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 .menu.flex-container {
@@ -41,10 +42,12 @@ body {
 
 .link {
     text-decoration: none;
-    padding: 15px;
+    padding: 20px;
     color: black;
     cursor: pointer;
     font-weight: bold;
+    margin-right: 10px;
+    margin-left: 40px;
 }
 
 
@@ -110,4 +113,152 @@ body {
     font-size: 12px;
     padding: 20px;
     justify-content: center;
+}
+
+.span-footer {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+
+/* Estilos para sección work */
+
+.img-container {
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+/*Manipula el tamaño de la imagen*/
+
+.img-container img {
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+
+/*Para el principal siempre y cuando sea clase flex container*/
+
+#principal.flex-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: black;
+    align-items: center;
+}
+
+.img-galery img {
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+/*Estilos para la galeria de imagenes*/
+
+.img-container-galery {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Manipula el tamaño de la imagen*/
+
+.img-container-galery img {
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+
+/*hover de las img*/
+
+.item:hover .item-overlay.top {
+    top: 0;
+}
+
+.item-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(224, 0, 0, 0.4);
+    overflow: hidden;
+    width: 100%;
+    transition: top 0.3s;
+    cursor: pointer;
+}
+
+.item-overlay.top {
+    top: 100%;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+.menu-color {
+    width: 100%;
+    height: 78px;
+    background-color: #F17C72;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu a:hover {
+    color: #2Ecc71;
+}
+
+
+/* Modales */
+
+#galery-portafolio {
+    background-color: #87bf75;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 235, 230, 0.9)
+}
+
+#galery-portafolio .modal-galeria {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+}
+
+
+/* Estilos para la posicion de la x */
+
+#galery-portafolio .close {
+    position: absolute;
+    top: 112px;
+    right: 20px;
+    width: 100px;
+    cursor: pointer;
+    margin-right: 300px;
+}
+
+#galery-portafolio .close img {
+    width: 23px;
+}
+
+
+/*Estilos para comenzar el modal oculto hasta el click*/
+
+.hide {
+    display: none;
 }

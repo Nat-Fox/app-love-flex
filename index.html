@@ -17,7 +17,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="menu flex-container">
+    <nav class="menu flex-container" id="navbar">
         <a href="#" class="text-uppercase link">Services</a>
         <a href="#" class="text-uppercase link">Work</a>
         <a href="#" class="text-uppercase link">The team</a>
@@ -49,24 +49,27 @@
             consectetur adipisicing elit. Amet iste, adipisci sint doloribus? Dolorum, odit, suscipit eligendi recusandae incidunt at explicabo quod, consequatur autem neque ipsam maxime distinctio dicta perspiciatis.
         </p>
 
-        <div class="box-services">
+        <div class="box-services item">
             <img src="assets/images/website.png" alt="Website" width="200">
+            <div class="item-overlay top"></div>
             <h5 class="mb-0">USER INTERFACE DESIGN</h5>
             <h6 class="m-0">Wireframing</h6>
             <h6 class="m-0">Prototyping</h6>
             <h6 class="m-0">Usability testing</h6>
         </div>
 
-        <div class="box-services">
-            <img src="assets/images/website.png" alt="Website" width="200">
+        <div class="box-services item">
+            <img src="assets/images/img-1.png" alt="Website" width="200">
+            <div class="item-overlay top"></div>
             <h5 class="mb-0">CONCEPT AND IDEAS</h5>
             <h6 class="m-0">Conceptualization</h6>
             <h6 class="m-0">Digital Branding</h6>
             <h6 class="m-0">Product strategy</h6>
         </div>
 
-        <div class="box-services">
-            <img src="assets/images/website.png" alt="Website" width="200">
+        <div class="box-services item">
+            <img src="assets/images/lapiz.png" alt="Website" width="200">
+            <div class="item-overlay top"></div>
             <h5 class="mb-0">DESIGN AND BRANDING</h5>
             <h6 class="m-0">Interaction Design</h6>
             <h6 class="m-0">Graphic Design</h6>
@@ -74,10 +77,42 @@
         </div>
     </section>
 
+    <!-- Sección Work -->
+    <section class="flex-container" id="principal">
+        <h1>WORK</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum possimus laboriosam voluptates quisquam veritatis suscipit fugit voluptate quaerat nihil saepe sed quis, labore officiis unde blanditiis, eos ex aspernatur esse? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum possimus laboriosam voluptates quisquam veritatis suscipit fugit voluptate quaerat nihil saepe sed quis, labore officiis unde blanditiis, eos ex aspernatur esse?
+        </p>
+        <div class="img-container">
+            <img src="assets/images/hero.png" alt="">
+        </div>
+    </section>
+
+    <!-- Sección galeria de imagenes -->
+    <section class="flex-container-galery" id="principal-galery">
+        <div class="img-container-galery img-galery">
+            <img src="assets/images/img-1.jpg" alt="">
+            <img src="assets/images/img-2.jpg" alt="">
+            <img src="assets/images/img-3.jpg" alt="">
+        </div>
+        <div class="img-container-galery img-galery">
+            <img src="assets/images/img-4.jpg" alt="">
+            <img src="assets/images/img-5.jpg" alt="">
+            <img src="assets/images/img-6.jpg" alt="">
+        </div>
+
+    </section>
+
     <!-- Footer -->
     <footer class="footer-fin flex-container">
-        Made with <i class="fa fa-heart" aria-hidden="true"></i> by Laboratoria
+        <span class="span-footer">Made with</span> <i class="fa fa-heart" aria-hidden="true"></i> <span class="span-footer">by Laboratoria</span>
     </footer>
+
+    <!-- Modal para galeria -->
+    <div id="galery-portafolio" class="hide">
+        <!--Creación dinámica de los elementos desde el JS-->
+    </div>
 
 
     <!-- Enlaza tu JS del proyecto aquí -->
