@@ -33,7 +33,7 @@ window.addEventListener('scroll', cambioDeNavbar);
     var modalFoto = document.getElementById('work-galery-modal');
     var modalGaleria, close, img;
     fotos.forEach(function(foto) {
-        console.log(foto);
+        //console.log(foto);
         foto.addEventListener('click', function() {
             // Borro todo lo que esta dentro del modal
             modalFoto.innerHTML = '';
